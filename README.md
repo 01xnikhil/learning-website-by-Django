@@ -87,3 +87,7 @@ http://127.0.0.1:8000/
 ├── requirements.txt
 
 └── README.md
+
+### Screenshots
+1.Home
+<img width="1912" height="1018" alt="Screenshot 2025-11-27 112239" src="https://github.com/user-attachments/assets/c6b0eaeb-5ca7-4d86-9cdc-c2dd20a6b992" />
