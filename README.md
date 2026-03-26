@@ -73,10 +73,16 @@ http://127.0.0.1:8000/
 
 ### Project Structure
 LMS/
-├── courses/         # Course modules and models
-├── users/           # Authentication and user profiles
-├── templates/       # HTML templates
-├── static/          # CSS, JS, images
+├── courses/
+# Course modules and models
+├── users/ 
+# Authentication and user profiles
+├── templates/
+# HTML templates
+├── static/  
+# CSS, JS, images
 ├── manage.py
+
 ├── requirements.txt
+
 └── README.md
