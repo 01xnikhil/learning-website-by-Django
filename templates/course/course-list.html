@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %} - All Courses {% endblock %}
+{% block content %}
+
+<!-- PAGE HEADER -->
+<header class="py-8 py-md-11 bg-light">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold mb-0">All Courses</h1>
+    <p class="lead text-muted">Browse our latest published courses</p>
+  </div>
+</header>
+
+<!-- COURSE GRID -->
+<div class="container py-8">
+  <div class="row">
+    {% for course in course %}
+    <div class="col-md-6 col-lg-4 mb-6">
+      <div class="card shadow-sm h-100">
+        <!-- Image -->
+        {% if course.featured_image %}
+        <img src="{{ course.featured_image.url }}" class="card-img-top" alt="{{ course.title }}">
+        {% endif %}
+
+        <!-- Card Body -->
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">{{ course.title }}</h5>
+          <p class="card-text text-muted">{{ course.description|truncatewords:20 }}</p>
+
+          <!-- Meta Info -->
+          <ul class="list-inline small text-muted mb-3">
+            <li class="list-inline-item"><i class="bi bi-bar-chart"></i> {{ course.level.name }}</li>
+            <li class="list-inline-item"><i class="bi bi-translate"></i> {{ course.language.language }}</li>
+          </ul>
+
+          <!-- Price -->
+          {% if course.price == 0 %}
+            <span class="badge bg-success mb-3">Free</span>
+          {% else %}
+            <span class="badge bg-primary mb-3">₹{{ course.price }}</span>
+          {% endif %}
+
+          <!-- Button -->
+          <a href="{% url 'course_details' course.slug %}" class="btn btn-outline-primary mt-auto">
+            View Details
+          </a>
+        </div>
+      </div>
+    </div>
+    {% empty %}
+    <div class="col-12 text-center">
+      <p class="text-muted">No courses available at the moment.</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,85 @@
+
+{% extends 'base.html' %}
+{% block title %} - Sing in {% endblock %}
+{% block content %}
+
+                        <div class="modal-body" style="margin: 60px; 60px;">
+                        <!-- Form Signup -->
+                        <form class="mb-5" method="post" action="{% url 'register' %}">
+                                 {% csrf_token %}
+                            <!-- Username -->
+                            <div class="form-group mb-5" >
+                                <label for="modalSignupUsername">
+                                    Username
+                                </label>
+                                <input type="text" class="form-control" id="modalSignupUsername" name="username">
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group mb-5" >
+                                <label for="modalSignupEmail">
+                                    Username or Email
+                                </label>
+                                <input type="email" class="form-control" id="modalSignupEmail" name="email">
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-group mb-5" >
+                                <label for="modalSignupPassword">
+                                    Password
+                                </label>
+                                <input type="password" class="form-control" id="modalSignupPassword"name="password">
+                            </div>
+
+                            <!-- Submit -->
+                            <button class="btn btn-block btn-primary" type="submit"  >
+                                SIGN UP
+                            </button>
+
+                        </form>
+
+                        <!-- Text -->
+                        <p class="mb-0 font-size-sm text-center">
+                            Already have an account? <a class="text-underline"  href="{% url 'login' %}" >Log In</a>
+                        </p>
+                    </div>
+
+
+                <!-- Forgot Password -->
+                <div class="collapse" id="collapseForgotPassword" data-bs-parent="#accountModal">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Recover password!</h5>
+                        <button type="button" class="close text-primary" data-bs-dismiss="modal" aria-label="Close">
+                            <!-- Icon -->
+                            <svg width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.142135 2.00015L1.55635 0.585938L15.6985 14.7281L14.2843 16.1423L0.142135 2.00015Z" fill="currentColor"></path>
+                                <path d="M14.1421 1.0001L15.5563 2.41431L1.41421 16.5564L0 15.1422L14.1421 1.0001Z" fill="currentColor"></path>
+                            </svg>
+
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Form Recover Password -->
+                        <form class="mb-5">
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="modalForgotpasswordEmail">
+                                    Email
+                                </label>
+                                <input type="email" class="form-control" id="modalForgotpasswordEmail" placeholder="johndoe@creativelayers.com">
+                            </div>
+
+                            <!-- Submit -->
+                            <button class="btn btn-block btn-primary" type="submit">
+                                RECOVER PASSWORD
+                            </button>
+                        </form>
+
+                        <!-- Text -->
+                        <p class="mb-0 font-size-sm text-center">
+                            Remember your password? <a class="text-underline" data-bs-toggle="collapse" href="#collapseSignin" role="button" aria-expanded="false" aria-controls="collapseSignin">Log In</a>
+                        </p>
+                    </div>
+                </div>
+    {% endblock %}
