@@ -106,6 +106,9 @@ http://127.0.0.1:8000/
 
 <img width="1917" height="968" alt="Screenshot 2025-11-27 114546" src="https://github.com/user-attachments/assets/35cb00b3-e75c-4ca8-934e-2274bd51f4a1" />
 
+#### 10.Forget Password
+<img width="1349" height="865" alt="Screenshot 2025-11-27 114300" src="https://github.com/user-attachments/assets/eba6f295-a826-4f40-a8d9-056d390de430" />
+
 #### 6.Profile Update
 <img width="1918" height="1000" alt="Screenshot 2025-11-27 113748" src="https://github.com/user-attachments/assets/f84d4add-b598-457a-a5c6-904383502048" />
 
@@ -119,9 +122,6 @@ http://127.0.0.1:8000/
 
 #### 9.Categories of Course
 <img width="1908" height="996" alt="Screenshot 2025-11-27 112528" src="https://github.com/user-attachments/assets/eaa1ec6a-7967-49fd-868d-ddb9c5ae4ace" />
-
-#### 10.Forget Password
-<img width="1349" height="865" alt="Screenshot 2025-11-27 114300" src="https://github.com/user-attachments/assets/eba6f295-a826-4f40-a8d9-056d390de430" />
 
 #### 11.Dbsqlit Database Model (Table)
 <img width="1919" height="996" alt="Screenshot 2025-11-27 114659" src="https://github.com/user-attachments/assets/f1d32c82-3b35-478a-9c39-375e65bd52e3" />
