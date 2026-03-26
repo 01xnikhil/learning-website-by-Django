@@ -5,7 +5,7 @@ This is a **Language Learning Website** built using **Django**.
 It demonstrates Django skills by implementing features such as:
 
 - Course modules (lessons, quizzes, exercises)
-- User authentication (signup/login/logout)
+- User authentication (signup/login/logout/Forgetting Password)
 - Progress tracking for learners
 - Interactive exercises
 - Responsive and clean UI
