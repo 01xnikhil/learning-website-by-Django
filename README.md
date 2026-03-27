@@ -53,7 +53,11 @@ This project showcases Django best practices including models, views, templates,
 
 python -m venv venv
 
-source venv/bin/activate   
+Mac/Ioo -
+source venv/bin/activate
+
+windows -
+venv/bin/activate
 
 ### Install dependencies:
 
